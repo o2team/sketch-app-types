@@ -37,9 +37,9 @@ const extraSymbols = [
   '_MSImmutableHotspotLayer', '_MSAssetContainer'
 ]
 
-function generate (context: SketchContext) {
+export default function generate (context: SketchContext) {
   try {
-    const output = String(context.scriptPath).replace(/\/[^/]*\/[^/]*\/[^/]*\/[^/]*\/[^/]*$/, '/types/sketch.d.ts')
+    const output = String(context.scriptPath).replace(/\/[^/]*\/[^/]*\/[^/]*\/[^/]*$/, '/types/sketch.d.ts')
     generateDo(context, /^_?MS/, output)
   } catch (e) {
     context.document.showMessage(e.message || String(e))
@@ -242,8 +242,4 @@ function uniqueArray (arr: any[]) {
 function writeFile (path: string, content: string) {
   const string = NSString.stringWithFormat('%@', content)
   return string.writeToFile_atomically(path, true)
-}
-
-export {
-  generate,
 }

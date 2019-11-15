@@ -1,10 +1,8 @@
 # sketchapp-types
 
-<div align="center">
-TypeScript declaration files for Sketch App.
+TypeScript declaration files for Sketch v60.
 
 ![preview](resources/gif.gif)
-</div>
 
 ## Known issues
 
