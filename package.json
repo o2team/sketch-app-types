@@ -1,0 +1,55 @@
+{
+  "name": "@o2team/sketchapp-types",
+  "description": "TypeScript declaration files for Sketch App",
+  "version": "0.1.0",
+  "engines": {
+    "sketch": ">=49.0"
+  },
+  "skpm": {
+    "name": "Generate Sketch.d.ts",
+    "manifest": "src/manifest.json",
+    "main": "Generate Sketch.d.ts.sketchplugin",
+    "assets": [
+      "assets/**/*"
+    ]
+  },
+  "scripts": {
+    "dev": "skpm-build --watch",
+    "start": "skpm-build --watch --run",
+    "build": "skpm-build",
+    "postinstall": "npm run build && skpm-link"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged",
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "lint-staged": {
+    "src/*.ts": [
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "devDependencies": {
+    "@commitlint/config-conventional": "^8.2.0",
+    "@skpm/builder": "^0.7.0",
+    "@typescript-eslint/eslint-plugin": "^2.7.0",
+    "@typescript-eslint/parser": "^2.7.0",
+    "commitlint": "^8.2.0",
+    "eslint": "^6.6.0",
+    "eslint-config-o2team": "^0.1.6",
+    "eslint-config-sketch": "^0.2.4",
+    "husky": "^3.0.9",
+    "lint-staged": "^9.4.3",
+    "terser-webpack-plugin": "^2.2.1",
+    "ts-loader": "^6.2.1",
+    "typescript": "^3.7.2"
+  },
+  "author": "koppthe <kopptsoft@gmail.com>"
+}

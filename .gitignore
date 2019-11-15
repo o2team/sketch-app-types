@@ -1,0 +1,21 @@
+# build artifacts
+*.sketchplugin
+
+# npm
+node_modules
+.npm
+npm-debug.log
+
+# mac
+.DS_Store
+
+# WebStorm
+.idea
+
+dist
+build
+yarn-error.log
+npm-debug.log*
+.eslintcache
+.vscode/
+.history

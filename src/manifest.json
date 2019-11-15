@@ -1,0 +1,19 @@
+{
+  "$schema": "https://raw.githubusercontent.com/BohemianCoding/SketchAPI/develop/docs/sketch-plugin-manifest-schema.json",
+  "name": "Generate Sketch.d.ts",
+  "author": "O2team",
+  "icon": "icon.png",
+  "compatibleVersion": "40",
+  "commands": [
+    {
+      "name": "Generate declarations",
+      "identifier": "generate-sketch-d-ts-identifier",
+      "script": "./generate.ts"
+    }
+  ],
+  "menu": {
+    "items": [
+      "generate-sketch-d-ts-identifier"
+    ]
+  }
+}
