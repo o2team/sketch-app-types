@@ -1,10 +1,14 @@
 {
-  "name": "@o2team/sketchapp-types",
+  "name": "sketch-app-types",
   "description": "TypeScript declaration files for Sketch App",
   "version": "0.1.0",
   "engines": {
     "sketch": ">=49.0"
   },
+  "files": [
+    "index.d.ts",
+    "types/*.d.ts"
+  ],
   "skpm": {
     "name": "Generate Sketch.d.ts",
     "manifest": "src/manifest.json",

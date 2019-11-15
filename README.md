@@ -1,4 +1,4 @@
-# sketchapp-types
+# sketch-app-types
 
 TypeScript declaration files for Sketch v60.
 
