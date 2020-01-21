@@ -4,6 +4,12 @@ TypeScript declaration files for Sketch v60.
 
 ![preview](resources/gif.gif)
 
+## Getting Started
+
+```bash
+$ npm install sketch-app-types
+```
+
 ## Known issues
 
 - no types for function arguments and return types (help wanted)

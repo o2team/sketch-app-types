@@ -1,7 +1,7 @@
 {
   "name": "sketch-app-types",
   "description": "TypeScript declaration files for Sketch App",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "engines": {
     "sketch": ">=49.0"
   },
@@ -20,8 +20,7 @@
   "scripts": {
     "dev": "skpm-build --watch",
     "start": "skpm-build --watch --run",
-    "build": "skpm-build",
-    "postinstall": "npm run build && skpm-link"
+    "build": "skpm-build"
   },
   "husky": {
     "hooks": {
